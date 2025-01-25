@@ -12,9 +12,12 @@ function App() {
 
   const addValue = () => {
     // console.log("Value: ", Math.random());
-    counter = counter + 1;
+    // counter = counter + 1;
     // console.log(counter);
-    setCounter(counter);
+    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1);
   }
   const decreaseValue = () => {
     setCounter(counter - 1);
